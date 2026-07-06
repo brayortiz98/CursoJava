@@ -1,5 +1,7 @@
 package ManejoConsola;
 
+import jdk.nashorn.internal.runtime.JSONFunctions;
+
 import java.util.Scanner;
 
 public class LeerTiposDatos {
@@ -23,6 +25,17 @@ public class LeerTiposDatos {
         System.out.println("Nombre = " + nombre);
 
         // Conversion de Datos
+        System.out.print("Proporciona un valor entero: ");
+        String enteroString = consola.nextLine();
+        int entero = Integer.parseInt(enteroString);
+        System.out.println("entero = " + entero);
+
+        // Tipo Flotante
+        System.out.print("Proporciona un valor de tipo Flotante: ");
+        float flotante = Float.parseFloat(consola.nextLine());
+        System.out.println("flotante = " + flotante);
+        //Double.parseDouble();
+        //Boolean.parseBoolean();
 
     }
 }
