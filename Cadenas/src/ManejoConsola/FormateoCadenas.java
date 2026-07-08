@@ -23,11 +23,26 @@ public class FormateoCadenas {
         // MEtodo printf
         System.out.printf("Nombre: %s, Edad: %d, Salario: %.2f",nombre, edad, salario);
 
+        int numeroEmpleado = 12;
         // Formateo Utilizando con text block
-        mensaje = """
-                %nDetalle Persona: \s
-                --------------------
-                Nombre: %s
-                """;
+        mensaje = String.format(
+                "%nDetalle Persona:%n" +
+                        "--------------------%n" +
+                        "\tNombre: %s%n" +
+                        "\tNumero Empleado: %04d%n"+
+                        "\tEdad: %d años%n"+
+                        "\tSalario: $%.2f%n",
+                        nombre, numeroEmpleado, edad, salario
+        );
+        System.out.println(mensaje);
+
+        // Formateo con Text block y printf directamente
+        System.out.printf("%nDetalle Persona:%n" +
+                "--------------------%n" +
+                "\tNombre: %s%n" +
+                "\tNumero Empleado: %04d%n"+
+                "\tEdad: %d años%n"+
+                "\tSalario: $%.2f%n",
+                nombre, numeroEmpleado, edad, salario);
     }
 }
