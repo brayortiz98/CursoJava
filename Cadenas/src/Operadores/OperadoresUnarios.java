@@ -29,5 +29,11 @@ public class OperadoresUnarios {
         resultado = --b;// primero se incrementa y despues se usa el valor
         System.out.println("Resultado --b = "+ resultado);
 
+        // Post-Decremento
+        b = -2;
+        resultado = b--; // primero se usa el valor, y despues se incrementa
+        System.out.println("resultado b-- = " + resultado);
+        System.out.println("b en este momento se decrementa = " + b);
+
     }
 }
