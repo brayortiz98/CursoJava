@@ -9,6 +9,12 @@ public class OperadoresAsignacion {
         miNumero2 = 15;
         // Asignacion compuesto
         // +=
+        miNumero += 5;  // miNumero = miNumero + 5;
+        System.out.println("miNumero = " + miNumero);
+        // -=, *=, /= y %=
+        miNumero *= 2;// miNumero = miNumero * 2 --> 30;
+        System.out.println("miNumero = " + miNumero);
+
 
         
     }
